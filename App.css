@@ -1,0 +1,139 @@
+li:first-child{
+  background-color:violet;
+}
+li:nth-child(2) .text{
+  background-color: indigo;
+}
+li:nth-child(3) .text{
+  background-color: rgb(130, 48, 0);
+}
+li:nth-child(4) .text{
+  background-color:green;
+}
+li:nth-child(5) .text{
+  background-color:pink;
+}
+li:nth-child(6) .text{
+  background-color:yellow;
+}
+li:nth-child(7) .text{
+  background-color:blue;
+}
+li:nth-child(8) .text{
+  background-color:orange;
+}
+li:nth-child(9) .text{
+  background-color:red;
+}
+li:first-child{
+  transform: rotate(0deg) skewY(-45deg);
+
+}
+li:nth-child(2){
+  transform: rotate(40deg) skewY(-45deg);
+  
+}
+
+li:nth-child(3){
+  transform: rotate(80deg) skewY(-45deg);
+}
+
+li:nth-child(4){
+  transform: rotate(120deg) skewY(-45deg);
+}
+
+li:nth-child(5){
+  transform: rotate(160deg) skewY(-45deg);
+  
+}
+
+li:nth-child(6){
+  transform: rotate(200deg) skewY(-45deg);
+  
+}
+
+li:nth-child(7){
+  transform: rotate(240deg) skewY(-45deg);
+  
+}
+
+li:nth-child(8){
+  transform: rotate(280deg) skewY(-45deg);
+  
+}
+
+li:nth-child(9){
+  transform: rotate(320deg) skewY(-45deg);
+}
+
+.circle{
+  width:25em;
+  height: 25em;
+  border: 7px double black;
+  position: relative;
+  padding: 0px;
+  margin: 1em auto;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px black;
+}
+li{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+  
+}
+.text {
+  position: absolute;
+  left: -100%;
+  width:200%;
+  height: 200%;  
+  text-align: center;
+  display: block;
+  transform: skewY(60deg) rotate(15%);
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.arrow{
+  width:0;
+  height:0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 15px solid black;
+position: absolute;
+left: 50%;
+top: -20px;
+z-index:1;
+
+}
+ .spin-button{
+  position: absolute;
+  left: 40px;
+  width: 120px;
+  height: 40px;
+  background-color:red;
+  border-radius: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  left: 45%;  
+
+}
+.start-rotate{
+  animation: start-rotate 2s linear infinite;
+}
+@keyframes start-rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
